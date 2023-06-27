@@ -22,6 +22,8 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Genero from './pages/Genero';
+import Pais from './pages/Pais';
 
 setupIonicReact();
 
@@ -37,6 +39,12 @@ const App: React.FC = () => {
             </Route>
             <Route path="/folder/:name" exact={true}>
               <Page />
+            </Route>
+            <Route path="/page/genero" exact={true}>
+              <Genero />
+            </Route>
+            <Route path="/page/pais" exact={true}>
+              <Pais />
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>
