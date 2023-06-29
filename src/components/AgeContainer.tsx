@@ -50,14 +50,14 @@ const AgeContainer: React.FC = () => {
 									`El nombre ${nombre} parece de la mediana edad. Su edad es ${valorEdad}`
 								);
 								setImagen(
-									"https://img.freepik.com/vector-premium/dibujos-animados-cara-hombre-joven_18591-44463.jpg"
+									"https://img.freepik.com/vector-premium/hombre-mediana-edad-pie-persona-ropa-casual_81894-7008.jpg"
 								);
 							} else {
 								setResultado(
 									`El nombre ${nombre} parece muy viejo. Su edad es ${valorEdad}`
 								);
 								setImagen(
-									"https://img.freepik.com/vector-premium/dibujos-animados-cara-hombre-joven_18591-44463.jpg"
+									"https://img.freepik.com/vector-premium/personaje-dibujos-animados-hombre-viejo-granjero-herramienta-jardin_1308-58639.jpg"
 								);
 							}
 						}
@@ -71,7 +71,7 @@ const AgeContainer: React.FC = () => {
 			<IonList>
 				<IonItem>
 					<IonInput
-						label="Inserte el nombre de la persona"
+						label="Nombre: "
 						type="text"
 						value={nombre}
 						onInput={(e: any) =>
@@ -93,10 +93,10 @@ const AgeContainer: React.FC = () => {
 								Buscar
 							</IonButton>
 						</IonButtons>
-						<IonTitle>{resultado}</IonTitle>
+						<IonTitle size="small">{resultado}</IonTitle>
 					</IonToolbar>
 				</IonInput>
-				<IonImg src={imagen}></IonImg>
+				<img width={200} height={200}  src={imagen}></img>
 			</IonList>
 		</>
 	);

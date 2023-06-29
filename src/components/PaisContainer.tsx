@@ -48,7 +48,7 @@ const PaisContainer: React.FC = () => {
 						);
 					}
 				})
-				.catch((e) => {});
+				.catch((e) => { });
 		}
 	};
 	return (
@@ -85,7 +85,7 @@ const PaisContainer: React.FC = () => {
 			</IonHeader>
 
 			<IonContent class="ion-margin">
-				<IonGrid class="ion-margin">
+				<IonGrid  class="ion-margin">
 					<IonRow>
 						<IonCol>Nombre</IonCol>
 						<IonCol>Dominio</IonCol>
@@ -100,21 +100,21 @@ const PaisContainer: React.FC = () => {
 							<IonCol>
 								{
 									valor[
-										"domains"
+									"domains"
 									][0]
 								}
 							</IonCol>
 							<IonCol>
 								{
 									valor[
-										"alpha_two_code"
+									"alpha_two_code"
 									]
 								}
 							</IonCol>
 							<IonCol>
 								{
 									valor[
-										"web_pages"
+									"web_pages"
 									][0]
 								}
 							</IonCol>

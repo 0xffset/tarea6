@@ -30,6 +30,9 @@ import "./theme/variables.css";
 import Genero from "./pages/Genero";
 import Pais from "./pages/Pais";
 import Age from "./pages/AgePage";
+import Clima from "./pages/Clima";
+import Wordpress from "./pages/WordpressPage";
+import About from "./pages/AboutPage";
 setupIonicReact();
 
 const App: React.FC = () => {
@@ -40,13 +43,7 @@ const App: React.FC = () => {
 					<Menu />
 					<IonRouterOutlet id="main">
 						<Route path="/" exact={true}>
-							<Redirect to="/folder/Inbox" />
-						</Route>
-						<Route
-							path="/folder/:name"
-							exact={true}
-						>
-							<Page />
+							<Redirect to="/page/genero" />
 						</Route>
 						<Route
 							path="/page/genero"
@@ -65,6 +62,24 @@ const App: React.FC = () => {
 							exact={true}
 						>
 							<Age />
+						</Route>
+						<Route
+							path="/page/clima"
+							exact={true}
+						>
+							<Clima />
+						</Route>
+						<Route
+							path="/page/wordpress"
+							exact={true}
+						>
+							<Wordpress />
+						</Route>
+						<Route
+							path="/page/acerca"
+							exact={true}
+						>
+							<About />
 						</Route>
 					</IonRouterOutlet>
 				</IonSplitPane>

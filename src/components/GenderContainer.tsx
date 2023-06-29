@@ -64,7 +64,7 @@ const GenderContainer: React.FC = () => {
 						}
 					}
 				})
-				.catch((e) => {});
+				.catch((e) => { });
 		}
 	};
 
@@ -84,7 +84,7 @@ const GenderContainer: React.FC = () => {
 			<IonList>
 				<IonItem>
 					<IonInput
-						label="Inserte el nombre de la persona"
+						label="Nombre: "
 						type="text"
 						value={nombre}
 						onInput={(e: any) =>
@@ -105,7 +105,7 @@ const GenderContainer: React.FC = () => {
 								Buscar
 							</IonButton>
 						</IonButtons>
-						<IonTitle color={"primary"}>
+						<IonTitle  size="small">
 							El nombre parece ser de
 							alguien {resultado} con
 							una probabilidad de{" "}
@@ -113,7 +113,7 @@ const GenderContainer: React.FC = () => {
 						</IonTitle>
 					</IonToolbar>
 				</IonInput>
-				<IonImg src={image}></IonImg>
+				<img width={200} height={200} src={image}></img>
 			</IonList>
 		</>
 	);
